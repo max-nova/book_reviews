@@ -13,7 +13,7 @@ def parse(fn, out_fn):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Extract Kindle highlights')
-    parser.add_argument('-k', '--kindle_highlights', type=str)
-    parser.add_argument('-o', '--out_fn', default='/tmp/highlights.txt')
+    parser.add_argument('kindle_highlights', type=str)
+    parser.add_argument('out_fn', default='/tmp/highlights.txt')
     args = parser.parse_args()
     print parse(args.kindle_highlights, args.out_fn)
