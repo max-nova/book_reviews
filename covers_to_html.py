@@ -14,6 +14,7 @@ def merge(covers_dir, out_fn):
     <style>
         .cover {
             height: 300px;
+            width: 200px;
             display: inline-block;
             vertical-align:top;
             line-height: 0px;
